@@ -135,7 +135,7 @@ and compute the message length only after that check.
 
 ## References
 
-- MP-SPDZ repository: https://github.com/data61/MP-SPDZ
+- MP-SPDZ repository: https://github.com/data61/MP-SPDZ/issues/1788
 
 ## Discoverer
 

@@ -139,7 +139,7 @@ throw mac_fail();
 ## References
 
 - MP-SPDZ v0.4.3 changelog / doc/security-fixes.rst: "Remove MAC key in case of failure"
-- MP-SPDZ repository: https://github.com/data61/MP-SPDZ
+- MP-SPDZ repository: https://github.com/data61/MP-SPDZ/issues/1789
 
 ## Discoverer
 

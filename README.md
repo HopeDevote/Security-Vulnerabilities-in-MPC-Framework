@@ -14,15 +14,15 @@ confirmation.
 
 | # | File | CWE | Severity |
 |---|------|-----|----------|
-| 01 | [Default Unencrypted/Unauthenticated Channels in Malicious-Security Protocols](MP-SPDZ/MP-SPDZ-01-Default-Unencrypted-Unauthenticated-Channels-in-Malicious-Security-Protocols.md) | CWE-319 / CWE-306 | High |
-| 02 | [Unauthenticated Party Identity Claim — Connection-Slot Hijacking & Party-List Poisoning](MP-SPDZ/MP-SPDZ-02-Unauthenticated-Party-Identity-Claim-Connection-Slot-Hijacking.md) | CWE-306 | High |
-| 03 | [Unauthenticated Length Prefix — Unbounded Memory Allocation (Remote DoS)](MP-SPDZ/MP-SPDZ-03-Unauthenticated-Length-Prefix-Unbounded-Memory-Allocation-Remote-DoS.md) | CWE-770 / CWE-400 | High |
-| 04 | [MAC Key / Base-OT State (Δ) Reuse After OT Correlation-Check Failure](MP-SPDZ/MP-SPDZ-04-MAC-Key-BaseOT-State-Reuse-After-OT-Correlation-Check-Failure.md) | CWE-323 / CWE-372 | High |
-| 05 | [FHE ZKPoK Fiat-Shamir Missing Prover Binding — Cross-Party Proof Replay](MP-SPDZ/MP-SPDZ-05-FHE-ZKPoK-Fiat-Shamir-Missing-Prover-Binding-Cross-Party-Proof-Replay.md) | CWE-294 / CWE-345 | High |
-| 06 | [MaliciousShamirMC::reconstruct Heap OOB Read (n > 2t+1, Private Output)](MP-SPDZ/MP-SPDZ-06-MaliciousShamirMC-reconstruct-Heap-OOB-Read-n-greater-2t-plus-1.md) | CWE-125 / CWE-129 | High |
-| 07 | [MAC-Failure Cleanup: unlink() Inside assert(), Wrong File, Real MAC Key Survives](MP-SPDZ/MP-SPDZ-07-MAC-Failure-Cleanup-Assert-Unlink-Wrong-File-MAC-Key-Survives.md) | CWE-617 / CWE-404 | Medium |
-| 08 | [Commitment Open() size_t Integer Underflow — Remote Crash](MP-SPDZ/MP-SPDZ-08-Commitment-Open-SizeT-Integer-Underflow-Remote-Crash.md) | CWE-191 / CWE-770 | Medium |
-| 09 | [KOS OT Extension Guaranteed Crash: partial_broadcast Not Implemented on TwoPartyPlayer](MP-SPDZ/MP-SPDZ-09-KOS-OT-Extension-partial-broadcast-NotImplemented-Guaranteed-Crash.md) | CWE-703 / CWE-248 | Medium |
+| 01 | [Default Unencrypted/Unauthenticated Channels in Malicious-Security Protocols](MP-SPDZ/MP-SPDZ-01-Default-Plaintext-Channels-MITM.md) | CWE-319 / CWE-306 | High |
+| 02 | [Unauthenticated Party Identity Claim — Connection-Slot Hijacking & Party-List Poisoning](MP-SPDZ/MP-SPDZ-02-Party-Impersonation-and-List-Poisoning.md) | CWE-306 | High |
+| 03 | [Unauthenticated Length Prefix — Unbounded Memory Allocation (Remote DoS)](MP-SPDZ/MP-SPDZ-03-Remote-Memory-Exhaustion-DoS.md) | CWE-770 / CWE-400 | High |
+| 04 | [MAC Key / Base-OT State (Δ) Reuse After OT Correlation-Check Failure](MP-SPDZ/MP-SPDZ-04-MAC-Key-Reuse-Enables-Key-Recovery.md) | CWE-323 / CWE-372 | High |
+| 05 | [FHE ZKPoK Fiat-Shamir Missing Prover Binding — Cross-Party Proof Replay](MP-SPDZ/MP-SPDZ-05-ZK-Proof-Replay-Across-Parties.md) | CWE-294 / CWE-345 | High |
+| 06 | [MaliciousShamirMC::reconstruct Heap OOB Read (n > 2t+1, Private Output)](MP-SPDZ/MP-SPDZ-06-Shamir-Heap-OOB-Read.md) | CWE-125 / CWE-129 | High |
+| 07 | [MAC-Failure Cleanup: unlink() Inside assert(), Wrong File, Real MAC Key Survives](MP-SPDZ/MP-SPDZ-07-MAC-Key-Not-Removed-On-Failure.md) | CWE-617 / CWE-404 | Medium |
+| 08 | [Commitment Open() size_t Integer Underflow — Remote Crash](MP-SPDZ/MP-SPDZ-08-Commitment-Underflow-Crash.md) | CWE-191 / CWE-770 | Medium |
+| 09 | [KOS OT Extension Guaranteed Crash: partial_broadcast Not Implemented on TwoPartyPlayer](MP-SPDZ/MP-SPDZ-09-KOS-OT-Guaranteed-Crash.md) | CWE-703 / CWE-248 | Medium |
 
 ## Affected Product
 

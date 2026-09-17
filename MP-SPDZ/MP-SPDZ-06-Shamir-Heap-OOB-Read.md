@@ -156,7 +156,7 @@ and add a runtime length guard at the top of `reconstruct`
 
 ## References
 
-- MP-SPDZ repository: https://github.com/data61/MP-SPDZ
+- MP-SPDZ repository issue: https://github.com/data61/MP-SPDZ/issues/1789
 
 ## Discoverer
 

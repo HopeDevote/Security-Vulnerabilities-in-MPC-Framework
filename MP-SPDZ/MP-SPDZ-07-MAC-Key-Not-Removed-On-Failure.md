@@ -6,8 +6,7 @@
 - **Affected components**: `Protocols/MAC_Check.hpp` (`mac_fail_remove`),
   `Processor/Online-Thread.hpp` (`Main_Func_With_Purge`); all SPDZ-family binaries
   (`mascot-party.x`, `spdz2k-party.x`, `chaigear-party.x`, …)
-- **Severity**: Medium (CVSS 3.1 estimate: 6.5 — AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N; the
-  MAC-key survival part is security-critical in combination with report 04)
+- **Severity**: High (the MAC-key survival part is security-critical)
 - **Notable**: v0.4.3's changelog advertises a security fix ("Remove MAC key in case of
   failure", doc/security-fixes.rst). This report shows the fix is **ineffective** in default
   configurations.

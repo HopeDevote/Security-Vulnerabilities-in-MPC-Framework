@@ -42,10 +42,32 @@ confirmation.
 ## Directory Layout
 
 ```
-MP-SPDZ/   one detailed report per vulnerability (CVE-oriented)
+MP-SPDZ/      one detailed report per vulnerability (CVE-oriented)
+SCALE-MAMBA/  one detailed report per vulnerability (CVE-oriented)
 ```
+
+---
+
+# Security Vulnerabilities in SCALE-MAMBA
+
+This repository additionally documents security vulnerabilities discovered in
+[SCALE-MAMBA](https://github.com/KULeuven-COSIC/SCALE-MAMBA) (KU Leuven COSIC, master
+`c111516`), an open-source framework for secure multi-party computation (MPC).
+
+Findings were confirmed by **static code audit** (call-flow traced to concrete code paths)
+and **dynamic proof-of-concept verification** in Docker (Ubuntu 20.04, x86_64), including
+AddressSanitizer instrumentation and end-to-end multi-party execution with a malicious
+party. Malicious parties are simulated with source patches that only alter what the
+*malicious* party shares/sends — a capability every malicious party has by definition in the
+malicious-security model. Honest-party code was never modified.
+
+## Vulnerability Index (SCALE-MAMBA)
+
+| # | File | CWE | Severity |
+|---|------|-----|----------|
+| 01 | [Missing Sacrifice Check in Mod2 Triple Generation (Gen_Checked_Triples)](SCALE-MAMBA/SCALE-MAMBA-01-Mod2-Sacrifice-Check-Missing.md) | CWE-358 / CWE-345 | High |
 
 ## Disclaimer
 
 This research was conducted for defensive security purposes. The vulnerabilities are reported
-to improve the security of the MP-SPDZ framework and its deployments.
+to improve the security of the MP-SPDZ and SCALE-MAMBA frameworks and their deployments.

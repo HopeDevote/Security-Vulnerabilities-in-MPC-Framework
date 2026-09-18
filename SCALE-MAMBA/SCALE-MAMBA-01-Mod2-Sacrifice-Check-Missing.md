@@ -1,7 +1,6 @@
 # SCALE-MAMBA: Missing Sacrifice Check in Mod2 Triple Generation (`Gen_Checked_Triples`) — Opened Check Values Never Compared to Zero
 
 - **Vulnerability type**: Improperly Implemented Security Check for Standard (CWE-358);
-  Insufficient Verification of Data Authenticity (CWE-345)
 - **Affected product**: SCALE-MAMBA (KU Leuven COSIC), master @ `c111516`
 - **Affected components**: `Player.x` — `src/Mod2Engine/Mod2Maurer.cpp`
   (`Gen_Checked_Triples`, Stage 2), consumed by `Mult_Bits`/`Mult_Bit`,

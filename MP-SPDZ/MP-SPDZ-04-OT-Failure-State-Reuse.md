@@ -8,10 +8,7 @@
   (`read_or_generate`), `OT/OTTripleSetup.cpp` (`get_fresh`); all OT-based dishonest-majority
   binaries (`mascot-party.x`, `spdz2k-party.x`, …)
 - **Severity**: High (enables repeated probing of the MAC key across restarts)
-- **Related**: report 07 / upstream issue
-  [#1789](https://github.com/data61/MP-SPDZ/issues/1789) covers the *MAC-check* failure path,
-  where cleanup runs but is buggy. This report covers the *OT-thread* failure path, where
-  cleanup is **never run at all**; fixing #1789 does not affect this issue.
+
 
 ## Summary
 
@@ -168,9 +165,7 @@ grep -n "base_receiver_inputs" OT/OTMultiplier.hpp   # line 125: asserted equal 
 
 - KOS15 selective-failure weakness: https://eprint.iacr.org/2022/192 (already cited in
   `OT/OTExtension.cpp:37`)
-- Report 07 (MAC-check cleanup broken) and upstream issue
-  [#1789](https://github.com/data61/MP-SPDZ/issues/1789): the MAC-check-path counterpart;
-  the two issues need independent fixes at different locations.
+- Issue report https://github.com/data61/MP-SPDZ/issues/1793
 
 ## Discoverer
 

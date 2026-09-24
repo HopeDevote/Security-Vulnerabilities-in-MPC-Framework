@@ -226,8 +226,5 @@ challenge = H("mpspdz-zkpopk" || sid || prover_id || pk_bytes || ciphertexts)
 ## References
 
 - MP-SPDZ repository: https://github.com/data61/MP-SPDZ
-- Upstream issue report: *(link to be added after filing)*
+- Issue report: https://github.com/data61/MP-SPDZ/issues/1791
 
-## Discoverer
-
-*(to be filled by reporter)*

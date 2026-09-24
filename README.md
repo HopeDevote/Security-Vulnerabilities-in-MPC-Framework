@@ -15,6 +15,7 @@ confirmation.
 | # | File | CWE | Severity |
 |---|------|-----|----------|
 | 03 | [Unauthenticated Length Prefix — Unbounded Memory Allocation (Remote DoS)](MP-SPDZ/MP-SPDZ-03-Remote-Memory-Exhaustion-DoS.md) | CWE-770 / CWE-400 | High |
+| 05 | [Fiat-Shamir Challenge Not Bound to Prover/Session — FHE ZKPoK Cross-Party Replay](MP-SPDZ/MP-SPDZ-05-FHE-ZKPoK-Replay.md) | CWE-345 / CWE-294 | High |
 | 06 | [MaliciousShamirMC::reconstruct Heap OOB Read (n > 2t+1, Private Output)](MP-SPDZ/MP-SPDZ-06-Shamir-Heap-OOB-Read.md) | CWE-125 / CWE-129 | High |
 | 07 | [MAC-Failure Cleanup: unlink() Inside assert(), Wrong File, Real MAC Key Survives](MP-SPDZ/MP-SPDZ-07-MAC-Key-Not-Removed-On-Failure.md) | CWE-617 / CWE-404 | Medium |
 | 08 | [Commitment Open() size_t Integer Underflow — Remote Crash](MP-SPDZ/MP-SPDZ-08-Commitment-Underflow-Crash.md) | CWE-191 / CWE-770 | Medium |
